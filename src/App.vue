@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Editor />
+    <Fab id="fab" />
   </div>
 </template>
 
 <script>
 import Editor from './components/Editor.vue';
+import Fab from './components/Fab.vue';
 
 export default {
   name: 'App',
   components: {
     Editor,
+    Fab,
   },
 };
 </script>
@@ -32,5 +35,11 @@ export default {
   height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+#fab {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
 }
 </style>
