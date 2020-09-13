@@ -8,10 +8,10 @@
 export default {
   name: 'Editor',
   mounted() {
-    this.$refs.textarea.$el.style.minHeight = "100vh";
+    this.$refs.textarea.$el.style.minHeight = '100vh';
     this.$refs.textarea.$el.focus();
-    }
-}
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
