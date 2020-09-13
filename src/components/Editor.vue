@@ -1,13 +1,16 @@
 <template>
   <div id="editor-container">
-    <textarea-autosize id="editor" ref="textarea" :min-height="800" spellcheck="false" />
+    <textarea-autosize id="editor" ref="textarea" spellcheck="false" />
   </div>
 </template>
 
 <script>
 export default {
   name: 'Editor',
-  mounted() {this.$refs.textarea.$el.focus()}
+  mounted() {
+    this.$refs.textarea.$el.style.minHeight = "100vh";
+    this.$refs.textarea.$el.focus();
+    }
 }
 </script>
 
