@@ -8,7 +8,7 @@
 export default {
   name: 'Editor',
   mounted() {
-    this.$refs.textarea.$el.style.minHeight = '100vh';
+    this.$refs.textarea.$el.style.minHeight = '99.9vh';
     this.$refs.textarea.$el.focus();
   },
 };
